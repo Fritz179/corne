@@ -31,7 +31,7 @@
             >;
         };
 
-        mumbers {
+        Numbers {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -40,14 +40,14 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &kp N1      &kp N2            &kp N3      &kp N4      &kp N5        &kp N6        &kp N7     &kp N8        &kp N9     &kp N0  &none
-&none       &kp LC(N1)  &kp LC(N2)        &kp LC(N3)  &kp LC(N4)  &kp LC(N5)    &kp LEFT      &kp DOWN   &kp UP        &kp RIGHT  &none   &none
-&none       &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &mmv MOVE_UP  &mkp LCLK  &msc SCRL_UP  &none      &none   &none
-                                          &trans      &none       &trans        &trans        &mo 3      &trans
+&kp ESCAPE  &kp N1      &kp N2            &kp N3      &kp N4      &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &none
+&none       &kp LC(N1)  &kp LC(N2)        &kp LC(N3)  &kp LC(N4)  &kp LC(N5)    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none   &none
+&none       &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none     &none     &none   &none      &none   &none
+                                          &trans      &none       &trans        &trans    &mo 3     &trans
             >;
         };
 
-        symbols {
+        Symbols {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -63,20 +63,14 @@
             >;
         };
 
-        functions {
+        Functions {
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &kp F1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &none
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none   &none
-&none       &none         &none         &none         &none         &none           &none     &none     &none   &none      &none   &none
-                                        &trans        &none         &trans          &trans    &none     &trans
+&kp ESCAPE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6          &kp F7          &kp F8        &kp F9           &kp F10    &kp F11
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK  &kp F12
+&none       &none         &none         &none         &none         &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp RCLK  &kp F13
+                                        &trans        &none         &trans          &trans          &none           &trans
             >;
         };
-
-        extra_1 { status = "reserved"; };
-
-        extra_2 { status = "reserved"; };
-
-        extra_3 { status = "reserved"; };
     };
 };
