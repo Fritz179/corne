@@ -38,11 +38,13 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE  &kp Q                &kp W            &kp E         &kp R              &kp T            &kp Z        &kp U               &kp I                   &kp O             &kp P                   &none
-&none       &mtd LEFT_COMMAND A  &mtd LEFT_ALT S  &mtd LCTRL D  &mtd LEFT_SHIFT F  &kp G            &kp H        &mtd RIGHT_SHIFT J  &mtd RCTRL K            &mtd RIGHT_ALT L  &mt RIGHT_COMMAND SEMI  &none
-&none       &kp Y                &kp X            &kp C         &kp V              &kp B            &kp N        &kp M               &kp COMMA               &kp DOT           &kp MINUS               &none
-                                                  &lt 4 ESCAPE  &lt 1 SPACE        &mt LCTRL TAB    &lt 4 ENTER  &lt 2 BACKSPACE     &mt RIGHT_SHIFT DELETE
+&kp ESCAPE      &kp Q                &kp W            &kp E         &kp R              &kp T            &kp Z        &kp U               &kp I                   &kp O             &kp P                   &none
+&kp LEFT_SHIFT  &mtd LEFT_COMMAND A  &mtd LEFT_ALT S  &mtd LCTRL D  &mtd LEFT_SHIFT F  &kp G            &kp H        &mtd RIGHT_SHIFT J  &mtd RCTRL K            &mtd RIGHT_ALT L  &mt RIGHT_COMMAND SEMI  &none
+&kp LCTRL       &kp Y                &kp X            &kp C         &kp V              &kp B            &kp N        &kp M               &kp COMMA               &kp DOT           &kp MINUS               &to 4
+                                                      &lt 5 ESCAPE  &lt 1 SPACE        &mt LCTRL TAB    &lt 5 ENTER  &lt 2 BACKSPACE     &mt RIGHT_SHIFT DELETE
             >;
+
+            label = "Alpha";
         };
 
         Numbers {
@@ -59,6 +61,8 @@
 &none       &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none     &none     &none   &none      &none   &none
                                           &trans      &none       &trans        &trans    &mo 3     &trans
             >;
+
+            label = "Numbers";
         };
 
         Symbols {
@@ -75,6 +79,8 @@
 &none       &none     &none              &none         &none         &none        &none     &none         &none     &none     &none       &none
                                          &trans        &mo 3         &trans       &trans    &none         &trans
             >;
+
+            label = "Symbols";
         };
 
         Functions {
@@ -85,27 +91,23 @@
 &none       &none         &none         &none         &none         &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp RCLK  &kp F13
                                         &trans        &none         &trans          &trans          &none           &trans
             >;
+
+            label = "Functions";
         };
 
-        layer_4 {
+        Gaming {
+            display-name = "Base";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T      &kp Z    &kp U               &kp I         &kp O             &kp P                   &none
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D    &kp F      &kp G      &kp H    &mtd RIGHT_SHIFT J  &mtd RCTRL K  &mtd RIGHT_ALT L  &mt RIGHT_COMMAND SEMI  &none
+&kp LCTRL       &kp Y  &kp X  &kp C    &kp V      &kp B      &kp N    &kp M               &kp COMMA     &kp DOT           &kp MINUS               &to 0
+                              &kp ESC  &kp SPACE  &kp TAB    &kp RET  &kp BSPC            &kp DEL
             >;
+
+            label = "Gaming";
         };
 
         layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
