@@ -38,10 +38,10 @@
 
             display-name = "Alpha";
             bindings = <
-&kp ESCAPE      &kp Q                &kp W            &kp E         &kp R              &kp T            &kp Z        &kp U               &kp I                   &kp O             &kp P                   &none
-&kp LEFT_SHIFT  &mtd LEFT_COMMAND A  &mtd LEFT_ALT S  &mtd LCTRL D  &mtd LEFT_SHIFT F  &kp G            &kp H        &mtd RIGHT_SHIFT J  &mtd RCTRL K            &mtd RIGHT_ALT L  &mt RIGHT_COMMAND SEMI  &none
-&kp LCTRL       &kp Y                &kp X            &kp C         &kp V              &kp B            &kp N        &kp M               &kp COMMA               &kp DOT           &kp MINUS               &to 4
-                                                      &lt 5 ESCAPE  &lt 1 SPACE        &mt LCTRL TAB    &lt 5 ENTER  &lt 2 BACKSPACE     &mt RIGHT_SHIFT DELETE
+&none  &kp Q                &kp W            &kp E         &kp R              &kp T            &kp Z            &kp U               &mtd LS(I) I            &kp O            &kp P                  &none
+&none  &mtd LEFT_COMMAND A  &mtd LEFT_ALT S  &mtd LCTRL D  &mtd LEFT_SHIFT F  &kp G            &kp H            &mtd RIGHT_SHIFT J  &mtd RCTRL K            &mtd LEFT_ALT L  &mt LEFT_COMMAND SEMI  &none
+&none  &kp Y                &kp X            &kp C         &kp V              &kp B            &kp N            &kp M               &kp COMMA               &kp DOT          &kp MINUS              &to 4
+                                             &lt 3 ESCAPE  &lt 1 SPACE        &mt LCTRL TAB    &mt RSHFT ENTER  &lt 2 BACKSPACE     &mt RIGHT_SHIFT DELETE
             >;
 
             label = "Alpha";
@@ -56,10 +56,10 @@
 
             display-name = "Numbers";
             bindings = <
-&kp ESCAPE  &kp N1      &kp N2            &kp N3      &kp N4      &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &none
-&none       &kp LC(N1)  &kp LC(N2)        &kp LC(N3)  &kp LC(N4)  &kp LC(N5)    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none   &none
-&none       &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none     &none     &none   &none      &none   &none
-                                          &trans      &none       &trans        &trans    &mo 3     &trans
+&none  &kp N1      &kp N2            &kp N3      &kp N4      &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &none
+&none  &kp LC(N1)  &kp LC(N2)        &kp LC(N3)  &kp LC(N4)  &kp LC(N5)    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none   &none
+&none  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none     &none     &none   &none      &none   &none
+                                     &trans      &none       &trans        &trans    &none     &trans
             >;
 
             label = "Numbers";
@@ -74,10 +74,10 @@
 
             display-name = "Symbols";
             bindings = <
-&kp ESCAPE  &kp PLUS  &kp DOUBLE_QUOTES  &kp ASTERISK  &none         &kp PRCNT    &kp AMPS  &kp SLASH     &none     &none     &kp EQUAL   &none
-&none       &kp LT    &kp LBRC           &kp LBKT      &kp LS(LPAR)  &none        &none     &kp LS(RPAR)  &kp RBKT  &kp RBRC  &kp LS(GT)  &none
-&none       &none     &none              &none         &none         &none        &none     &none         &none     &none     &none       &none
-                                         &trans        &mo 3         &trans       &trans    &none         &trans
+&none  &kp PLUS       &kp DOUBLE_QUOTES  &kp ASTERISK  &kp SINGLE_QUOTE  &kp PRCNT    &kp AMPS         &kp SLASH     &kp CARET  &kp TILDE  &kp EQUAL   &none
+&none  &kp LT         &kp LBRC           &kp LBKT      &kp LS(LPAR)      &kp GRAVE    &kp EXCLAMATION  &kp LS(RPAR)  &kp RBKT   &kp RBRC   &kp LS(GT)  &none
+&none  &kp BACKSLASH  &kp AT             &kp HASH      &none             &none        &none            &kp QUESTION  &none      &none      &none       &none
+                                         &trans        &none             &trans       &trans           &none         &trans
             >;
 
             label = "Symbols";
@@ -86,7 +86,7 @@
         Functions {
             display-name = "Functions";
             bindings = <
-&kp ESCAPE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6          &kp F7          &kp F8        &kp F9           &kp F10    &kp F11
+&none       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6          &kp F7          &kp F8        &kp F9           &kp F10    &kp F11
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK  &kp F12
 &none       &none         &none         &none         &none         &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp RCLK  &kp F13
                                         &trans        &none         &trans          &trans          &none           &trans
@@ -98,22 +98,13 @@
         Gaming {
             display-name = "Gaming";
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R      &kp T      &kp Z    &kp U               &kp I         &kp O             &kp P                   &none
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D    &kp F      &kp G      &kp H    &mtd RIGHT_SHIFT J  &mtd RCTRL K  &mtd RIGHT_ALT L  &mt RIGHT_COMMAND SEMI  &none
-&kp LCTRL       &kp Y  &kp X  &kp C    &kp V      &kp B      &kp N    &kp M               &kp COMMA     &kp DOT           &kp MINUS               &to 0
-                              &kp ESC  &kp SPACE  &kp TAB    &kp RET  &kp BSPC            &kp DEL
+&kp ESCAPE      &kp Q  &kp W  &kp E           &kp R      &kp T      &kp Z    &kp U               &kp I         &kp O             &kp P                   &none
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D           &kp F      &kp G      &kp H    &mtd RIGHT_SHIFT J  &mtd RCTRL K  &mtd RIGHT_ALT L  &mt RIGHT_COMMAND SEMI  &none
+&kp LCTRL       &kp Y  &kp X  &kp C           &kp V      &kp B      &kp N    &kp M               &kp COMMA     &kp DOT           &kp MINUS               &to 0
+                              &mtd F3 ESCAPE  &kp SPACE  &kp TAB    &kp RET  &kp BSPC            &kp DEL
             >;
 
             label = "Gaming";
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
         };
     };
 };
