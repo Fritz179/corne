@@ -59,7 +59,7 @@
 &none  &kp N1      &kp N2            &kp N3      &kp N4      &kp N5        &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &none
 &none  &kp LC(N1)  &kp LC(N2)        &kp LC(N3)  &kp LC(N4)  &kp LC(N5)    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none   &none
 &none  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &none     &none     &none   &none      &none   &none
-                                     &trans      &none       &trans        &trans    &none     &trans
+                                     &trans      &trans      &trans        &trans    &trans    &trans
             >;
 
             label = "Numbers";
@@ -77,7 +77,7 @@
 &none  &kp PLUS       &kp DOUBLE_QUOTES  &kp ASTERISK  &kp SINGLE_QUOTE  &kp PRCNT    &kp AMPS         &kp SLASH     &kp CARET  &kp TILDE  &kp EQUAL   &none
 &none  &kp LT         &kp LBRC           &kp LBKT      &kp LS(LPAR)      &kp GRAVE    &kp EXCLAMATION  &kp LS(RPAR)  &kp RBKT   &kp RBRC   &kp LS(GT)  &none
 &none  &kp BACKSLASH  &kp AT             &kp HASH      &none             &none        &none            &kp QUESTION  &none      &none      &none       &none
-                                         &trans        &none             &trans       &trans           &none         &trans
+                                         &trans        &trans            &trans       &trans           &trans        &trans
             >;
 
             label = "Symbols";
@@ -89,7 +89,7 @@
 &none       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6          &kp F7          &kp F8        &kp F9           &kp F10    &kp F11
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK  &kp F12
 &none       &none         &none         &none         &none         &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp RCLK  &kp F13
-                                        &trans        &none         &trans          &trans          &none           &trans
+                                        &trans        &trans        &trans          &trans          &trans          &trans
             >;
 
             label = "Functions";
