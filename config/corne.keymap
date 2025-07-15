@@ -74,10 +74,10 @@
 
             display-name = "Symbols";
             bindings = <
-&none  &kp PLUS       &kp DOUBLE_QUOTES  &kp ASTERISK  &kp SINGLE_QUOTE  &kp PRCNT    &kp AMPS         &kp SLASH     &kp CARET  &kp TILDE     &kp EQUAL       &none
-&none  &kp LT         &kp LBRC           &kp LBKT      &kp LS(LPAR)      &kp GRAVE    &kp EXCLAMATION  &kp LS(RPAR)  &kp RBKT   &kp RBRC      &kp LS(GT)      &none
-&none  &kp BACKSLASH  &kp AT             &kp HASH      &none             &none        &none            &kp QUESTION  &kp SEMI   &kp LS(SEMI)  &kp UNDERSCORE  &none
-                                         &trans        &trans            &trans       &trans           &trans        &trans
+&none  &kp PLUS       &kp DOUBLE_QUOTES  &kp ASTERISK    &kp SINGLE_QUOTE  &kp PRCNT    &kp AMPS         &kp SLASH     &kp CARET        &kp TILDE          &kp EQUAL       &none
+&none  &kp LT         &kp LEFT_BRACKET   &kp LEFT_BRACE  &kp LS(LPAR)      &kp GRAVE    &kp EXCLAMATION  &kp LS(RPAR)  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp LS(GT)      &none
+&none  &kp BACKSLASH  &kp AT             &kp HASH        &none             &none        &none            &kp QUESTION  &kp SEMI         &kp LS(SEMI)       &kp UNDERSCORE  &none
+                                         &trans          &trans            &trans       &trans           &trans        &trans
             >;
 
             label = "Symbols";
