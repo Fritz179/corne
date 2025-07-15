@@ -98,10 +98,10 @@
         Gaming {
             display-name = "Gaming";
             bindings = <
-&kp LEFT_ALT    &kp Q  &kp W  &kp E           &kp R      &kp T      &kp Z            &kp U               &kp I             &kp O             &kp P                   &none
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D           &kp F      &kp G      &kp H            &mtd RIGHT_SHIFT J  &mtd RCTRL K      &mtd RIGHT_ALT L  &mt RIGHT_COMMAND SEMI  &none
-&kp LCTRL       &kp Y  &kp X  &kp C           &kp V      &kp B      &kp N            &kp M               &kp COMMA         &kp DOT           &kp MINUS               &to 0
-                              &mtd F3 ESCAPE  &kp SPACE  &kp TAB    &mt RSHFT ENTER  &lt 2 BACKSPACE     &mt RSHFT DELETE
+&kp LEFT_ALT    &kp Q  &kp W  &kp E      &kp R      &kp T     &kp Z            &kp U               &kp I             &kp O             &kp P                   &none
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F      &kp G     &kp H            &mtd RIGHT_SHIFT J  &mtd RCTRL K      &mtd RIGHT_ALT L  &mt RIGHT_COMMAND SEMI  &none
+&kp LCTRL       &kp Y  &kp X  &kp C      &kp V      &kp B     &kp N            &kp M               &kp COMMA         &kp DOT           &kp MINUS               &to 0
+                              &lt 1 ESC  &kp SPACE  &kp F3    &mt RSHFT ENTER  &lt 2 BACKSPACE     &mt RSHFT DELETE
             >;
 
             label = "Gaming";
