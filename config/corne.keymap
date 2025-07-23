@@ -29,18 +29,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Gaming {
-            display-name = "Gaming";
-            bindings = <
-&mt LA(TAB) TAB  &kp Q  &kp W  &kp E      &kp R      &kp T     &kp Z            &kp U               &mtd LS(I) I  &kp O        &kp P                  &none
-&kp LEFT_SHIFT   &kp A  &kp S  &kp D      &kp F      &kp G     &kp H            &mtd RIGHT_SHIFT J  &mtd RCTRL K  &mtd LALT L  &mt LEFT_COMMAND SEMI  &none
-&kp LCTRL        &kp Y  &kp X  &kp C      &kp V      &kp B     &kp N            &kp M               &kp COMMA     &kp DOT      &kp MINUS              &to 1
-                               &lt 2 ESC  &kp SPACE  &kp F3    &mt RSHFT ENTER  &lt 3 BACKSPACE     &lt 2 DELETE
-            >;
-
-            label = "Gaming";
-        };
-
         Alpha {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
@@ -52,11 +40,23 @@
             bindings = <
 &none  &kp Q                &kp W            &kp E         &kp R              &kp T            &kp Z            &kp U               &mtd LS(I) I  &kp O            &kp P                  &none
 &none  &mtd LEFT_COMMAND A  &mtd LEFT_ALT S  &mtd LCTRL D  &mtd LEFT_SHIFT F  &kp G            &kp H            &mtd RIGHT_SHIFT J  &mtd RCTRL K  &mtd LEFT_ALT L  &mt LEFT_COMMAND SEMI  &none
-&none  &kp Y                &kp X            &kp C         &kp V              &kp B            &kp N            &kp M               &kp COMMA     &kp DOT          &kp MINUS              &to 0
+&none  &kp Y                &kp X            &kp C         &kp V              &kp B            &kp N            &kp M               &kp COMMA     &kp DOT          &kp MINUS              &to 1
                                              &lt 4 ESCAPE  &lt 2 SPACE        &mt LCTRL TAB    &mt RSHFT ENTER  &lt 3 BACKSPACE     &lt 2 DELETE
             >;
 
             label = "Alpha";
+        };
+
+        Gaming {
+            display-name = "Gaming";
+            bindings = <
+&mt LA(TAB) TAB  &kp Q  &kp W  &kp E      &kp R      &kp T     &kp Z            &kp U               &mtd LS(I) I  &kp O        &kp P                  &none
+&kp LEFT_SHIFT   &kp A  &kp S  &kp D      &kp F      &kp G     &kp H            &mtd RIGHT_SHIFT J  &mtd RCTRL K  &mtd LALT L  &mt LEFT_COMMAND SEMI  &none
+&kp LCTRL        &kp Y  &kp X  &kp C      &kp V      &kp B     &kp N            &kp M               &kp COMMA     &kp DOT      &kp MINUS              &to 0
+                               &lt 2 ESC  &kp SPACE  &kp F3    &mt RSHFT ENTER  &lt 3 BACKSPACE     &lt 2 DELETE
+            >;
+
+            label = "Gaming";
         };
 
         Numbers {
