@@ -10,7 +10,14 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Caps {
+            bindings = <&kp CAPS>;
+            key-positions = <16 19>;
+        };
+    };
 
     behaviors {
         mtd: ModTap {
@@ -26,6 +33,15 @@
         };
     };
 
+    macros {
+        mail: mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp F &kp A &kp B &kp R &kp I &kp Z &kp I &kp O &kp DOT &kp C &kp O &kp R &kp T &kp E &kp S &kp I &kp N1 &kp N7 &kp N9 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "MAIL";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -38,7 +54,7 @@
 
             display-name = "Alpha";
             bindings = <
-&none  &kp Q                &kp W            &kp E         &kp R              &kp T            &kp Z            &kp U               &mtd LS(I) I  &kp O            &kp P                  &none
+&none  &kp Q                &kp W            &kp E         &kp R              &kp T            &kp Z            &kp U               &mtd LS(I) I  &kp O            &kp P                  &mail
 &none  &mtd LEFT_COMMAND A  &mtd LEFT_ALT S  &mtd LCTRL D  &mtd LEFT_SHIFT F  &kp G            &kp H            &mtd RIGHT_SHIFT J  &mtd RCTRL K  &mtd LEFT_ALT L  &mt LEFT_COMMAND SEMI  &none
 &none  &kp Y                &kp X            &kp C         &kp V              &kp B            &kp N            &kp M               &kp COMMA     &kp DOT          &kp MINUS              &to 1
                                              &lt 4 ESCAPE  &lt 2 SPACE        &mt LCTRL TAB    &mt RSHFT ENTER  &lt 3 BACKSPACE     &lt 2 DELETE
