@@ -10,14 +10,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        Enter_test {
-            bindings = <&kp LS(ENTER)>;
-            key-positions = <38 39>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         mtd: ModTap {
