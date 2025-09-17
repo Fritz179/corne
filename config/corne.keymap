@@ -21,9 +21,9 @@
     };
 
     behaviors {
-        mtd: ModTap {
+        mtd: ModTapDelay {
             compatible = "zmk,behavior-hold-tap";
-            label = "ModTap";
+            label = "Mod/Tap Delayed";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
@@ -31,6 +31,15 @@
             tapping-term-ms = <200>;
             require-prior-idle-ms = <200>;
             quick-tap-ms = <200>;
+        };
+
+        ltd: LayerTapDelay {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Layer/Tap Delayed";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -67,10 +76,10 @@
         Gaming {
             display-name = "Gaming";
             bindings = <
-&kp LEFT_ALT    &kp Q  &kp W  &kp E    &kp R      &kp T      &kp Z            &kp U               &mtd LS(I) I  &kp O        &kp P                  &none
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D    &kp F      &kp G      &kp H            &mtd RIGHT_SHIFT J  &mtd RCTRL K  &mtd LALT L  &mt LEFT_COMMAND SEMI  &none
-&kp LCTRL       &kp Y  &kp X  &kp C    &kp V      &kp B      &kp N            &kp M               &kp COMMA     &kp DOT      &kp MINUS              &to 0
-                              &kp ESC  &kp SPACE  &kp TAB    &mt RSHFT ENTER  &lt 3 BACKSPACE     &lt 2 DELETE
+&kp LEFT_ALT    &kp Q  &kp W  &kp E    &kp R      &kp T      &kp Z             &kp U               &mtd LS(I) I  &kp O        &kp P                  &none
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D    &kp F      &kp G      &kp H             &mtd RIGHT_SHIFT J  &mtd RCTRL K  &mtd LALT L  &mt LEFT_COMMAND SEMI  &none
+&kp LCTRL       &kp Y  &kp X  &kp C    &kp V      &kp B      &kp N             &kp M               &kp COMMA     &kp DOT      &kp MINUS              &to 0
+                              &kp ESC  &kp SPACE  &kp TAB    &mtd RSHFT ENTER  &ltd 3 BACKSPACE    &lt 2 DELETE
             >;
 
             label = "Gaming";
