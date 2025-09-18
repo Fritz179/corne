@@ -55,9 +55,10 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             wait-ms = <0>;       // delay between macro steps
-            tap-ms  = <30>;      // hold each tap for x ms
+            tap-ms = <30>;      // hold each tap for x ms
             // forward the macro's 1st param into &kp:
-            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
         };
     };
 
@@ -73,10 +74,10 @@
 
             display-name = "Alpha";
             bindings = <
-&none  &kp Q                &kp W            &kp E         &kp R              &kp T            &kp Z            &kp U               &mtd LS(I) I  &kp O            &kp P                  &mail
-&none  &mtd LEFT_COMMAND A  &mtd LEFT_ALT S  &mtd LCTRL D  &mtd LEFT_SHIFT F  &kp G            &kp H            &mtd RIGHT_SHIFT J  &mtd RCTRL K  &mtd LEFT_ALT L  &mt LEFT_COMMAND SEMI  &none
-&none  &kp Y                &kp X            &kp C         &kp V              &kp B            &kp N            &kp M               &kp COMMA     &kp DOT          &kp MINUS              &to 1
-                                             &lt 4 ESCAPE  &lt 2 SPACE        &mt LCTRL TAB    &mt RSHFT ENTER  &lt 3 BACKSPACE     &lt 2 DELETE
+&none  &kp Q                &kp W            &kp E          &kp R              &kp T             &kp Z             &kp U               &mtd LS(I) I   &kp O            &kp P                   &mail
+&none  &mtd LEFT_COMMAND A  &mtd LEFT_ALT S  &mtd LCTRL D   &mtd LEFT_SHIFT F  &kp G             &kp H             &mtd RIGHT_SHIFT J  &mtd RCTRL K   &mtd LEFT_ALT L  &mtd LEFT_COMMAND SEMI  &none
+&none  &kp Y                &kp X            &kp C          &kp V              &kp B             &kp N             &kp M               &kp COMMA      &kp DOT          &kp MINUS               &to 1
+                                             &ltd 4 ESCAPE  &ltd 2 SPACE       &mtd LCTRL TAB    &mtd RSHFT ENTER  &ltd 3 BACKSPACE    &ltd 2 DELETE
             >;
 
             label = "Alpha";
@@ -85,10 +86,10 @@
         Gaming {
             display-name = "Gaming";
             bindings = <
-&kp LEFT_ALT    &kp Q  &kp W  &kp E    &kp R      &kp T      &kp Z             &kp U               &mtd LS(I) I  &kp O        &kp P                  &none
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D    &kp F      &kp G      &kp H             &mtd RIGHT_SHIFT J  &mtd RCTRL K  &mtd LALT L  &mt LEFT_COMMAND SEMI  &none
-&kp LCTRL       &kp Y  &kp X  &kp C    &kp V      &kp B      &kp N             &kp M               &kp COMMA     &kp DOT      &kp MINUS              &to 0
-                              &kp ESC  &kp SPACE  &kp TAB    &mtd RSHFT ENTER  &ltd 3 BACKSPACE    &lt 2 DELETE
+&kp LEFT_ALT    &kp Q  &kp W  &kp E       &kp R      &kp T             &kp Z             &kp U               &mtd LS(I) I   &kp O        &kp P                   &none
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D       &kp F      &kp G             &kp H             &mtd RIGHT_SHIFT J  &mtd RCTRL K   &mtd LALT L  &mtd LEFT_COMMAND SEMI  &none
+&kp LCTRL       &kp Y  &kp X  &kp C       &kp V      &kp B             &kp N             &kp M               &kp COMMA      &kp DOT      &kp MINUS               &to 0
+                              &ltd 4 ESC  &kp SPACE  &mtd LCTRL TAB    &mtd RSHFT ENTER  &ltd 3 BACKSPACE    &ltd 2 DELETE
             >;
 
             label = "Gaming";
