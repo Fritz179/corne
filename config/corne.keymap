@@ -25,25 +25,21 @@
             compatible = "zmk,behavior-hold-tap";
             label = "Mod/Tap Delayed";
             #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp>, <&kpd>;
 
             flavor = "balanced";
             tapping-term-ms = <200>;
             require-prior-idle-ms = <200>;
             quick-tap-ms = <200>;
-
-            wait-ms = <50>;
         };
 
         ltd: LayerTapDelay {
             compatible = "zmk,behavior-hold-tap";
             label = "Layer/Tap Delayed";
-            bindings = <&mo>, <&kp>;
+            bindings = <&mo>, <&kpd>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-
-            wait-ms = <50>;
         };
     };
 
@@ -53,6 +49,15 @@
             #binding-cells = <0>;
             bindings = <&none &kp F &kp A &kp B &kp R &kp I &kp Z &kp I &kp O &kp DOT &kp C &kp O &kp R &kp T &kp E &kp S &kp I &kp N1 &kp N7 &kp N9 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "MAIL";
+        };
+
+        kpd: KeyPressDelay {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            wait-ms = <0>;       // delay between macro steps
+            tap-ms  = <30>;      // hold each tap for x ms
+            // forward the macro's 1st param into &kp:
+            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
         };
     };
 
