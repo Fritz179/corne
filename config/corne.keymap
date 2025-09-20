@@ -43,12 +43,6 @@
         };
     };
 
-    unicode_chars {
-      oe: oe { compatible = "zmk,unicode-char"; #binding-cells = <0>; unicode = <0x00F6>; }; // ö
-      ue: ue { compatible = "zmk,unicode-char"; #binding-cells = <0>; unicode = <0x00FC>; }; // ü
-      ae: ae { compatible = "zmk,unicode-char"; #binding-cells = <0>; unicode = <0x00E4>; }; // ä
-    };
-
     macros {
         mail: mail {
             compatible = "zmk,behavior-macro";
@@ -70,13 +64,7 @@
         umlaut_a: umlaut_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; 
-            bindings = <&ae>; // 'ä'
-        };
-
-        umlaut_o: umlaut_o {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>; 
-            bindings = <&oe>; // 'ö'
+            bindings = <&unicode_0x00E4>; // 'ä'
         };
     };
 
