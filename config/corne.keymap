@@ -43,6 +43,12 @@
         };
     };
 
+    unicode_chars {
+      oe: oe { compatible = "zmk,unicode-char"; unicode = <0x00F6>; }; // ö
+      ue: ue { compatible = "zmk,unicode-char"; unicode = <0x00FC>; }; // ü
+      ae: ae { compatible = "zmk,unicode-char"; unicode = <0x00E4>; }; // ä
+    };
+
     macros {
         mail: mail {
             compatible = "zmk,behavior-macro";
@@ -63,7 +69,12 @@
 
         umlaut_a: umlaut_a {
             compatible = "zmk,behavior-macro";
-            bindings = <&u U00E4>; // 'ä'
+            bindings = <&ae>; // 'ä'
+        };
+
+        umlaut_o: umlaut_o {
+            compatible = "zmk,behavior-macro";
+            bindings = <&ao>; // 'ö'
         };
     };
 
