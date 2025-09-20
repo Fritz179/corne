@@ -44,9 +44,9 @@
     };
 
     unicode_chars {
-      oe: oe { compatible = "zmk,unicode-char"; unicode = <0x00F6>; }; // ö
-      ue: ue { compatible = "zmk,unicode-char"; unicode = <0x00FC>; }; // ü
-      ae: ae { compatible = "zmk,unicode-char"; unicode = <0x00E4>; }; // ä
+      oe: oe { compatible = "zmk,unicode-char"; #binding-cells = <0>; unicode = <0x00F6>; }; // ö
+      ue: ue { compatible = "zmk,unicode-char"; #binding-cells = <0>; unicode = <0x00FC>; }; // ü
+      ae: ae { compatible = "zmk,unicode-char"; #binding-cells = <0>; unicode = <0x00E4>; }; // ä
     };
 
     macros {
