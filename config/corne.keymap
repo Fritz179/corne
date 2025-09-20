@@ -69,11 +69,13 @@
 
         umlaut_a: umlaut_a {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; 
             bindings = <&ae>; // 'ä'
         };
 
         umlaut_o: umlaut_o {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; 
             bindings = <&oe>; // 'ö'
         };
     };
