@@ -60,6 +60,11 @@
 
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
         };
+
+        umlaut_a: umlaut_a {
+          compatible = "zmk,behavior-macro";
+          bindings = <&u U00E4>; // 'ä'
+        };
     };
 
     keymap {
