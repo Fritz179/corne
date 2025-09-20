@@ -74,7 +74,7 @@
 
         umlaut_o: umlaut_o {
             compatible = "zmk,behavior-macro";
-            bindings = <&ao>; // 'ö'
+            bindings = <&oe>; // 'ö'
         };
     };
 
