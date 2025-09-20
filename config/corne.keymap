@@ -65,10 +65,6 @@
             umlaut_a: umlaut_a { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; bindings = <&kp DOUBLE_QUOTES>, <&kp A>; };
             umlaut_o: umlaut_o { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; bindings = <&kp DOUBLE_QUOTES>, <&kp O>; };
             umlaut_u: umlaut_u { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; bindings = <&kp DOUBLE_QUOTES>, <&kp U>; };
-
-            umlaut_A: umlaut_A { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; bindings = <&kp DOUBLE_QUOTES>, <&kp LS(A)>; };
-            umlaut_O: umlaut_O { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; bindings = <&kp DOUBLE_QUOTES>, <&kp LS(O)>; };
-            umlaut_U: umlaut_U { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; bindings = <&kp DOUBLE_QUOTES>, <&kp LS(U)>; };
         };
     };
 
