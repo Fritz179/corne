@@ -98,9 +98,9 @@
 
             display-name = "Alpha";
             bindings = <
-&none  &kp Q                &kp W            &kp E          &kp R              &kp T             &kp Z             &kp U               &mtd LS(I) I   &kp O            &kp P                   &mail
-&none  &mtd LEFT_COMMAND A  &mtd LEFT_ALT S  &mtd LCTRL D   &mtd LEFT_SHIFT F  &kp G             &kp H             &mtd RIGHT_SHIFT J  &mtd RCTRL K   &mtd LEFT_ALT L  &mtd LEFT_COMMAND SEMI  &umlaut_a
-&none  &kp Y                &kp X            &kp C          &kp V              &kp B             &kp N             &kp M               &kp COMMA      &kp DOT          &kp MINUS               &to 1
+&none  &kp Q                &kp W            &kp E          &kp R              &kp T             &kp Z             &kp U               &mtd LS(I) I   &kp O             &kp P                    &mail
+&none  &mtd LEFT_COMMAND A  &mtd LEFT_ALT S  &mtd LCTRL D   &mtd LEFT_SHIFT F  &kp G             &kp H             &mtd RIGHT_SHIFT J  &mtd RCTRL K   &mtd RIGHT_ALT L  &mtd RIGHT_COMMAND SEMI  &umlaut_a
+&none  &kp Y                &kp X            &kp C          &kp V              &kp B             &kp N             &kp M               &kp COMMA      &kp DOT           &kp MINUS                &to 1
                                              &ltd 4 ESCAPE  &ltd 2 SPACE       &mtd LCTRL TAB    &mtd RSHFT ENTER  &ltd 3 BACKSPACE    &ltd 2 DELETE
             >;
 
