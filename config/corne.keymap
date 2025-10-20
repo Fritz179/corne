@@ -18,6 +18,11 @@
             bindings = <&kp CAPS>;
             key-positions = <16 19>;
         };
+
+        Switch_keyboard_layout {
+            bindings = <&kp RA(LEFT_ALT)>;
+            key-positions = <14 21>;
+        };
     };
 
     behaviors {
